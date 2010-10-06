@@ -29,6 +29,7 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    @ctype = @item.ctype
   end
 
   # POST /items

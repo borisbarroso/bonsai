@@ -4,7 +4,7 @@
 class Item < ActiveRecord::Base
 
   before_save :set_stockable
-  TYPES = ['Item', 'Expense item', 'Product', 'Service']
+  TYPES = ['Item', 'ExpenseItem', 'Product', 'Service']
 
   acts_as_org
   # acts_as_taggable_on :tags
